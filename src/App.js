@@ -10,16 +10,17 @@ import CreateUser from "./components/create-user.component";
 function App() {
   return (
     <Router>
-      <Navbar />
-      <br />
-
-      {/*Router components define what component loads based on the URL
-        Ex. If the path is equal to "/", the ExercisesList component will be
-        displayed.*/}
-      <Route path="/" exact component={ExerciseList} />
-      <Route path="/edit/:id" component={EditExercise} />
-      <Route path="/create" component={CreateExercise} />
-      <Route path="/user" component={CreateUser} />
+      <div className="container">
+        <Navbar />
+        <br />
+        {/*Router components define what component loads based on the URL
+          Ex. If the path is equal to "/", the ExercisesList component will be
+          displayed.*/}
+        <Route path="/" exact component={ExerciseList} />
+        <Route path="/edit/:id" component={EditExercise} />
+        <Route path="/create" component={CreateExercise} />
+        <Route path="/user" component={CreateUser} />
+      </div>
     </Router>
   );
 }
