@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <Navbar />
+        <Navbar className="responsive-navbar-nav" />
         <br />
         {/*Router components define what component loads based on the URL
           Ex. If the path is equal to "/", the ExercisesList component will be
